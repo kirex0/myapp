@@ -28,13 +28,16 @@ newGame() {
 get player(){
   return this.xIsNext ? 'X' : 'O';
 }
+currentColor: string = 'pink';
+
 makeMove(idx: number){
+
 if (!this.squares[idx]){
   this.squares.splice(idx, 1, this.player);
   this.xIsNext = !this.xIsNext;
 }
 this.winner = this.calculateWinner();
-
+  
 }
 calculateWinner(){
 const lines = [
@@ -59,4 +62,6 @@ const lines = [
   return null;
 
 }
+
+
 }
