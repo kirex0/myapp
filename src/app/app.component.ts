@@ -9,9 +9,8 @@ import {  NbButtonModule, NbLayoutModule } from '@nebular/theme';
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [RouterOutlet, SquareComponent, BoardComponent, NbButtonModule],
     providers: [],
-    
+    imports: [RouterOutlet, SquareComponent, BoardComponent, NbButtonModule]
 })
 export class AppComponent {
   title = 'myapp';

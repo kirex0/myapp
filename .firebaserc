@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "kirextictactoe": {
+      "hosting": {
+        "myapp": [
+          "kirextictactoe"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "kirextictactoe"
+  }
+}
